@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Family Book</h1>
+        <p>
+            <h4 id="Name_of_the_person">Monika Kalra</h4>
+        </p>
+        <br>
+        <hr>
+        <p>
+            <h4 id="Relation_of_Person">
+                Mother
+            </h4>
+        </p>
+        <button id="change" onclick="change()">Next</button>
+        <script>
+            var relation=["Mother" , "Father" , "Grandfather" , "Grandmother"];
+            var Name=["Monika Kalra" , "JS Chander" , "Onkar Singh Kalra" , "Jasbir Kaur Kalra"]; 
+            var i=0;
+function change(){
+    i=0;
+ 
+    document.getElementById("Name_of_the_person").innerHTML=Name[i];
+  
+  document.getElementById("Relation_of_person").innerHTML=relation[i];
+  i++;
+};
+
+             
+        </script>
+    </body>
+</html>
