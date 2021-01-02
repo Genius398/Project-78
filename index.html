@@ -15,21 +15,19 @@
                 Mother
             </h4>
         </p>
-        <button id="change" onclick="change()">Next</button>
+        <button id="change" onclick="change();">Next</button>
         <script>
-            var relation=["Mother" , "Father" , "Grandfather" , "Grandmother"];
-            var Name=["Monika Kalra" , "JS Chander" , "Onkar Singh Kalra" , "Jasbir Kaur Kalra"]; 
+            var relation=["Mother" ,  "Grandfather" , "Grandmother"];
+            var Name=["Monika Kalra"  , "Onkar Singh Kalra" , "Jasbir Kaur Kalra"]; 
             var i=0;
 function change(){
-    i=0;
- 
-    document.getElementById("Name_of_the_person").innerHTML=Name[i];
-  
-  document.getElementById("Relation_of_person").innerHTML=relation[i];
-  i++;
-};
-
-             
-        </script>
-    </body>
-</html>
+    i++;
+    var number_of_family_members = 5;
+    if (i > number_of_family_members){
+        i = 0;
+    }
+    var updatedRelation=[i];
+    var updatedName=[i];
+    document.getElementById("Relation_of_Person").innerHTML=updatedRelation;
+    document.getElementById("Name_of_the_person").innerHTML=updatedName;
+}
