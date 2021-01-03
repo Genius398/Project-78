@@ -1,33 +1,19 @@
 <html>
     <head>
-        <title>Family Book</title>
-        <link rel="stylesheet" href="style.css">
+        <title>
+            Project C78
+        </title>
+        <script src="main.js"></script>
     </head>
     <body>
-        <h1>Family Book</h1>
-        <p>
-            <h4 id="Name_of_the_person">Monika Kalra</h4>
-        </p>
-        <br>
-        <hr>
-        <p>
-            <h4 id="Relation_of_Person">
-                Mother
-            </h4>
-        </p>
-        <button id="change" onclick="change();">Next</button>
-        <script>
-            var relation=["Mother" ,  "Grandfather" , "Grandmother"];
-            var Name=["Monika Kalra"  , "Onkar Singh Kalra" , "Jasbir Kaur Kalra"]; 
-            var i=0;
-function change(){
-    i++;
-    var number_of_family_members = 5;
-    if (i > number_of_family_members){
-        i = 0;
-    }
-    var updatedRelation=[i];
-    var updatedName=[i];
-    document.getElementById("Relation_of_Person").innerHTML=updatedRelation;
-    document.getElementById("Name_of_the_person").innerHTML=updatedName;
-}
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" style="width: 30%;" id="family_member_image">
+            <h4 id="family_member_name"></h4>
+            <button onclick="update();">Next</button>
+        </center>
+    </body>
+</html>
